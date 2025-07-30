@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Functions In JavaScript</h1>
+        <button onclick="demo()">Click Me</button>
+        <br>
+        <br>
+        <button onclick="add()">Addition</button>
+        <p id="answer"></p>
+        <p id="one"></p>
+        <script>
+            /*
+            Create basic Function in JS
+Outline:
+In this activity, learn how to declare functions and invoke
+ functions on-click events.
+
+
+Scope of Variables in Functions
+Outline:
+In this activity, learn what local variables are and how it
+ can be accessed.
+
+
+Expression function
+Outline:
+In this activity, learn how to store function expression in a 
+variable and use it.  */
+      function demo(){
+        alert("welcome to the class")
+      }
+      function add(){
+        var a=5
+        var b=6
+        document.getElementById("answer").innerHTML=a+b
+      }
+       function multiplycation(x,y,z) {
+       var x=5
+       var y=2
+       return x *y * z
+       document.getElementById("one").innerHTML=multiplycation(2)
+       }
+
+        </script>
+    </body>
+</html>
