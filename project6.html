@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+     <h1>HTML Dom</h1>
+     <h1 id="one">Welcome</h1>
+     <p>This Is The Welcome Message</p>
+     <h2>Techchnology Section</h2>
+     <br><br><br>
+     <h1>JS As External File</h1>
+     <p>Adding JS As A  Seprate File</p>
+     <button onclick="myfunction()">Click Me</button>
+     <p id="two"></p>
+     <script src="script.js">
+        var text = document.getElementById("one").innerHTML ;
+        alert("the first heading is" + text)
+        function validate() {
+          e.preventDefault();
+          const email = document.getElementById("email").value;
+          const pass = document.getElementById("password").value;
+          const age = document.getElementById("age").value;
+         const msgBox = document.getElementById("message").value;
+          let message = ""
+          if(email ==="" ){
+            message = "Enter An Email.";
+            msgBox.style.color = "red";
+          }else if (pass ===""){
+          message = "Enter A Password.";
+            msgBox.style.color = "red"; 
+          }else if (age ===""){
+          message = "Enter Your Age.";
+            msgBox.style.color = "red"; 
+        }else{
+          message = "Logim Succesful";
+          msBox.style.color = "green";
+        }
+        msgBox.innerText = message;
+      }
+     </script>
+    </body>
+</html>
