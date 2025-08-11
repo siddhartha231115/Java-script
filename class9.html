@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript Array Sort</h1>
+    <button onclick="ascending()">ascending order</button>
+     <button onclick="descending()">descending order</button>
+     <p id="result"></p>
+     <br><br>
+
+     <h1>map an array</h1>
+     <p id="product"></p>
+
+
+     <br><br>
+     <h1>Evaluate</h1>
+     <script>
+      var points= [1,56,100,27,3,89,98,2,6,4]
+      document.getElementById("result") .innerHTML=points;
+      function ascending(){
+      points.sort(function(a,b){
+        return a-b
+      })
+      document.getElementById("result").innerHTML = points;
+      }
+      function descending(){
+      points.sort(function(a,b){
+        return b-a
+      })
+      document.getElementById("result").innerHTML = points;
+      }
+
+      //maping
+      var numbers = [28,6,19,95]
+      function myfunction(num){
+        return num* 10;
+      }
+      var newarray = numbers.map(myfunction);
+      document.getElementById("product").innerHTML = newarray;
+     
+     </script>
+</body>
+</html>
