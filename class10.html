@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Convert,Search And Replace String</h1>
+        <p>Search a string for "doing", 
+            display the position of the
+             match and replace the word 
+            "how are"
+             with "how are you" and display</p>
+        <p id="search"></p>
+        <p id="replace"></p>
+        <p id="string"></p>
+        <br><br>
+
+        <h1>Error Handeling</h1>
+         <p>This example demonstrates how to use 
+            <b>catch</b>
+             to diplay an error.</p>
+             <p id="error"></p>
+
+
+             <br><br>
+             <h1>Arrow Function</h1>
+             <p>This example shows an Arrow Function with a parameter.</p>
+    <p id="arrow"></p>
+        <script>
+            var str = "hello how are you doing for the day ";
+            var searchPosition = str.search("hello");
+            var txt =str.replace("how are","siddhartha how are you")
+            var x = 70;
+            var y = 90;
+            document.getElementById("search").innerHTML = searchPosition
+            document.getElementById("replace").innerHTML = txt;
+             document.getElementById("string").innerHTML = String(x)+String(y);
+              try{
+                addalert("welcome guest!");
+            }
+            catch(err){
+             document.getElementById("error").innerHTML = err.message;
+            }
+            add = (a,b)=> a+b
+            document.getElementById("arrow").innerHTML = add(4,9);
+        </script>
+    </body>
+</html>
