@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Area Caluculator In JavaScript</h1>
+        <script>
+            var choice = prompt("Welcome To Area Calculator. \n Please Enter Your Choice.\n  1.Area Of Triangle\n   2. Area Of Rectangle  \n  3.Area Of Circle \n   4.Area Of Parallelogram")
+          if (choice == "2"){
+            var l = prompt("Enter The Height")
+            var b = prompt ("Enter The Breadth")
+            var result = Number(l)* Number(b)
+            alert("The Area Is" + result)
+
+          } 
+          if (choice == "1"){
+            var h = prompt("Enter The Height")
+            var b = prompt ("Enter The Base")
+            var result = Number(h)* Number(b)/2
+            alert("The Area Is" + result)
+
+          }  
+          if (choice == "3"){
+            var l = prompt("Enter The Radius")
+            var result = 3.14*Number(l)*Number(l)
+            alert("The Area Is" + result)
+
+          } 
+          if (choice == "4"){
+            var l = prompt("Enter The Height")
+            var b = prompt ("Enter The Corresponding Base")
+            var result = Number(l)* Number(b)
+            alert("The Area Is" + result)
+
+          }  
+            
+        </script>
+    </body>
+</html>
