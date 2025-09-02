@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap Example</title>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: cyan;
+        }
+        .topnav a{
+        float: left;
+        color:deeppink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav:hover{
+            background-color: blueviolet;
+            color: deepskyblue;
+        }
+        .topnav a.active{
+            background-color: yellowgreen;
+            color: darkcyan;
+        }
+    </style>
     </head>
     <body>
-    <div class="container">
-    <h2>Carousel Example</h2>
-    <div class="carousel slide" id="mycarousel" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
-            <li data-target="#mycarousel" data-slide-to="1"></li>
-            <li data-target="#mycarousel" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.NXCqtO-Um04fDEaWHg_79AHaHM?pid=Api&P=0&h=180" width="500px" height="500px">
-            </div>
-
-              <div class="item">
-                <img src="https://purepng.com/public/uploads/large/flower-2wq.png" width="500px" height="500px">
-            </div>
-
-              <div class="item">
-                <img src="https://purepng.com/public/uploads/large/purepng.com-flowerflower-summer-spring-da-961524680185rl2io.png" width="500px" height="500px">
-            </div>
+        <div class="topnav">
+            <a class="active"> home</a>
+            <a href="about.html">About</a>
+            <a href="https://meet.google.com/landing">Contact Me</a>
+            <a href="https://github.com/">Gallery</a>
         </div>
-        <a class="left carousel-control" href="#mycarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">previous</span>
-        </a>
-        <a class="right carousel-control" href="#mycarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">next</span>
-        </a>
-    </div>
-    </div>
     </body>
 </html>
