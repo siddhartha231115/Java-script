@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+
+            background-color: #deb878;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            text-decoration: underline;
+
+            text-transform: capitalize;
+
+        }
+
+        .carousel-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 300px;
+            /* Adjust based on your image height */
+        }
+
+
+            /* Hide all slides by default */
+
+            .myslides{
+
+                max-height: 100%;
+                 /* Ensure images fit within container */
+
+                max-width: 100%;
+
+            }
+    </style>
+</head>
+
+<body>
+    <h1> My Favorite Places</h1>
+    <div class="carousel -container">
+        <img class="myslides" src="https://tse1.mm.bing.net/th/id/OIP.CQXPPuPSfkyAXluJTAIEZwHaE8?pid=Api&P=0&h=180" style="height: 500px;">
+        <img class="myslides" src="https://tse2.mm.bing.net/th/id/OIP.YKCj9ayE-jUvKSxYNntGEQHaE6?pid=Api&P=0&h=180" style="height: 500px;" >
+        <img class="myslides" src="https://tse1.mm.bing.net/th/id/OIP.FVXv_87dthYgd5CX9s-R_gHaD4?pid=Api&P=0&h=180" style="height: 500px;">
+        </div>
+        <script>
+        var index = 0;
+        function carousel(){
+        var i;
+        var x = document.getElementById("myslides");
+        for (i=0; i < x.length; i++ ) {``
+        x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length){
+            index = 1;
+        }
+        x[index - 1]; style.display = "block";
+        setTimeout(carousel,2000);
+        }
+        carousel();
+        </script>
+</body>
+
+</html>
